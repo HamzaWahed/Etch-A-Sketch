@@ -14,7 +14,7 @@ function changeColor(){
     let box = document.querySelectorAll(".square")
     box.forEach(element => 
         element.addEventListener("mouseenter",function(){
-            element.style.backgroundColor = 'blue';
+            element.style.backgroundColor = "black";
         })
     );
 }
@@ -39,8 +39,8 @@ function remove(){
 
 function changeStyle(amount){
     let grid = document.querySelector(".grid");
-    grid.style.gridTemplateColumns = `repeat(${amount}, 30px)`;
-    grid.style.gridTemplateRows = `repeat(${amount}, 30px)`;
+    grid.style.gridTemplateColumns = `repeat(${amount}, 1fr)`;
+    grid.style.gridTemplateRows = `repeat(${amount}, 1fr)`;
 }
 
 createGrid(256);
